@@ -190,13 +190,7 @@ body.menu-open {
   font-size: 0.9rem;
   padding-left: 4px;
 }
-.language-selector {
-  min-width: 130px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+
 .desktop-only {
   display: inline-block;
 }
