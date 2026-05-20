@@ -1071,33 +1071,33 @@ opacity:0;
 visibility:hidden;
 }
 
+/* FINAL MENU ICON FIX */
+
 .menu-toggle{
-display:none;
-background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.15);
+font-size:28px !important;
+font-weight:700;
+color:#fff !important;
+line-height:1;
+text-align:center;
+
+display:flex !important;
+align-items:center;
+justify-content:center;
+
 width:46px;
 height:46px;
+
+background:rgba(255,255,255,.08) !important;
+border:1px solid rgba(255,255,255,.15) !important;
 border-radius:12px;
+
+text-shadow:
+0 0 10px rgba(255,255,255,.6);
+
 padding:0;
-cursor:pointer;
 }
 
-@media(max-width:767px){
-
-.menu-toggle{
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-gap:5px;
-}
-
+/* eski spanlarni o'chir */
 .menu-toggle span{
-width:22px;
-height:3px;
-background:#fff !important;
-border-radius:30px;
-display:block;
-}
-
+display:none !important;
 }
