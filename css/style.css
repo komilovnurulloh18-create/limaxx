@@ -255,8 +255,11 @@ body.menu-open {
   cursor: pointer;
 }
 
-.mobile-nav-items {
-  display: contents;
+.mobile-nav-items{
+display:flex;
+flex-direction:column;
+width:100%;
+gap:12px;
 }
 
 .mobile-lang-title {
@@ -1098,4 +1101,19 @@ padding:0;
 /* eski spanlarni o'chir */
 .menu-toggle span{
 display:none !important;
+}
+
+@media(max-width:767px){
+
+.mobile-nav-items{
+width:100%;
+}
+
+.mobile-nav-items a{
+width:100%;
+text-align:left;
+white-space:normal !important;
+word-break:break-word;
+}
+
 }
