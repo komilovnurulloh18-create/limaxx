@@ -1113,7 +1113,7 @@ flex:none !important;
 
 }
 
-/* TIL IKKITA CHIQISH FIX */
+/* TIL FIX */
 
 .desktop-only{
 display:block !important;
@@ -1130,11 +1130,20 @@ display:none !important;
 }
 
 .mobile-lang-wrap{
-display:block !important;
+display:flex !important;
+flex-direction:column;
+width:100%;
 }
 
-.mobile-lang-wrap .language-selector:nth-child(2){
+/* faqat desktop tilni yashir */
+.navbar > .language-selector{
 display:none !important;
+}
+
+/* mobil ichidagini chiqar */
+.mobile-lang-wrap .language-selector{
+display:block !important;
+width:130px !important;
 }
 
 }
