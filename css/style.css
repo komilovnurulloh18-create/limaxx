@@ -1038,3 +1038,35 @@ animation:spin .8s linear infinite !important;
 }
 
 }
+
+/* ===== FINAL FIX ===== */
+
+/* menyu ochilganda orqa scroll blok */
+body.menu-open{
+position:fixed !important;
+overflow:hidden !important;
+width:100%;
+height:100%;
+touch-action:none;
+}
+
+/* menu o'zi scroll bo'lsin */
+.nav-links.open{
+overflow-y:auto !important;
+-webkit-overflow-scrolling:touch;
+}
+
+/* loader har doim tepada */
+.loader{
+position:fixed !important;
+top:0;
+left:0;
+right:0;
+bottom:0;
+z-index:999999999 !important;
+}
+
+.loader.hidden{
+opacity:0;
+visibility:hidden;
+}
