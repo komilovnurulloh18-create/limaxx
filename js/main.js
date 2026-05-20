@@ -15,17 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const reveals = document.querySelectorAll(".reveal");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    },
-    { threshold: 0.2 },
-  );
-  reveals.forEach((item) => observer.observe(item));
+
+const revealOnScroll = () => {
+  reveals.forEach((item) => {
+    const top = item.getBoundingClientRect().top;
+
+    if (top < window.innerHeight - 80) {
+      item.classList.add("visible");
+    }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll,{passive:true});
+
+revealOnScroll();
 
   const counters = document.querySelectorAll("[data-counter]");
   counters.forEach((counter) => {
