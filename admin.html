@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIMAX | Admin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">LIMAX</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="products.html">Products</a
+        ><a href="collections.html">Collections</a
+        ><a href="portfolio.html">Portfolio</a
+        ><a href="partners.html">Partners</a><a href="about.html">About Us</a
+        ><a href="contact.html">Contact</a><a href="login.html">Login</a>
+      </div>
+    </nav>
+    <main class="container page-hero">
+      <section class="glass card reveal">
+        <h1>Admin</h1>
+        <p>Premium LIMAX admin experience page.</p>
+        <form id="adminLoginForm" class="form-grid">
+          <input
+            name="email"
+            type="email"
+            value="admin@limax.uz"
+            required
+          /><input
+            name="password"
+            type="password"
+            placeholder="Admin password"
+            required
+          /><button class="btn">Admin Login</button>
+        </form>
+        <div class="admin-layout" id="dashboard">
+          <aside class="admin-sidebar">
+            <h3>Management</h3>
+            <p>Products, Users, Orders, Reviews, Website Text, Stats</p>
+          </aside>
+          <section class="admin-main">
+            <div class="admin-grid">
+              <article class="glass card">
+                <h3>Add / Edit Product</h3>
+                <input placeholder="Product Name" /><textarea
+                  placeholder="Description"
+                ></textarea>
+              </article>
+              <article class="glass card">
+                <h3>Upload Images</h3>
+                <div id="dropZone" class="drop-zone">Drag & Drop images</div>
+                <input id="productImages" type="file" multiple />
+                <div id="imagePreview" class="preview-list"></div>
+              </article>
+              <article class="glass card">
+                <h3>Manage Users</h3>
+                <p>View, update, remove user accounts.</p>
+              </article>
+              <article class="glass card">
+                <h3>Manage Orders / Reviews</h3>
+                <p>Track orders and moderate reviews.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p data-lang="footerSocial">
+    <a href="https://t.me/LIMAX" target="_blank">Telegram</a> |
+    <a href="https://instagram.com/limax" target="_blank">Instagram</a> |
+    <a href="https://facebook.com/limax" target="_blank">Facebook</a>
+  </p>
+      <p>© 2026 LIMAX</p>
+    </footer>
+    <script src="js/main.js"></script>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

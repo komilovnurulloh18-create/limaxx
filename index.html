@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIMAX | Premium Textile & Socks Company</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="loader"><div class="loader-ring"></div></div>
+    <div class="blur-circle blur-1"></div>
+    <div class="blur-circle blur-2"></div>
+
+    <nav class="navbar">
+      <div class="logo">LIMAX</div>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Open mobile menu"
+        aria-controls="mainNav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="mainNav">
+        <button
+          id="menuClose"
+          class="menu-close"
+          aria-label="Close mobile menu"
+          type="button"
+        >
+          ×
+        </button>
+
+        <div class="mobile-nav-items">
+          <a class="active" href="index.html" data-lang="navHome"
+            >Bosh sahifa</a
+          >
+          <a href="products.html" data-lang="navProducts">Mahsulotlar</a>
+          <a href="collections.html" data-lang="navCollections"
+            >Kolleksiyalar</a
+          >
+          <a href="portfolio.html" data-lang="navPortfolio">Portfolio</a>
+          <a href="partners.html" data-lang="navPartners">Hamkorlar</a>
+          <a href="about.html" data-lang="navAbout">Biz haqimizda</a>
+          <a href="contact.html" data-lang="navContact">Aloqa</a>
+          <a href="login.html" data-lang="navLogin">Kirish</a>
+        </div>
+
+        <label class="lang-label desktop-only" data-lang="langLabel">Til</label>
+        <select
+          class="language-selector desktop-only"
+          aria-label="Language selector"
+        >
+          <option value="uz">🇺🇿 O'zbek</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="ru">🇷🇺 Русский</option>
+        </select>
+
+        <div class="mobile-lang-wrap">
+          <p class="mobile-lang-title" data-lang="langLabel">Til</p>
+          <select
+            class="language-selector"
+            aria-label="Mobile language selector"
+          >
+            <option value="uz">🇺🇿 O'zbek</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="ru">🇷🇺 Русский</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section hero container">
+        <article class="glass hero-card reveal">
+          <h1>LIMAX</h1>
+          <h2 data-lang="heroSubtitle">
+            Premium to'qimachilik va paypoq yechimlari
+          </h2>
+          <p data-lang="heroDescription">
+            Yuqori sifatli to'qimachilik mahsulotlari, ishonch, innovatsiya va
+            premium xizmat.
+          </p>
+          <div class="btn-row">
+            <a class="btn" href="products.html" data-lang="heroBtnProducts"
+              >Mahsulotlarni ko'rish</a
+            >
+            <a
+              class="btn"
+              href="collections.html"
+              data-lang="heroBtnCollections"
+              >Kolleksiyalarni ko'rish</a
+            >
+            <a class="btn" href="contact.html" data-lang="heroBtnContact"
+              >Biz bilan bog'lanish</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <section class="section container reveal">
+        <h2 data-lang="featuredTitle">Tavsiya etilgan kolleksiyalar</h2>
+        <div class="grid">
+          <article class="glass card" data-lang="collection1">
+            Qishki kolleksiya
+          </article>
+          <article class="glass card" data-lang="collection2">
+            Premium paypoqlar
+          </article>
+          <article class="glass card" data-lang="collection3">
+            Hashamatli to'qimachilik
+          </article>
+          <article class="glass card" data-lang="collection4">
+            Biznes kolleksiya
+          </article>
+          <article class="glass card" data-lang="collection5">
+            Yangi mahsulotlar
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <h2 data-lang="showcaseTitle">Mahsulot vitrinası</h2>
+        <div class="products-filter">
+          <input
+            id="searchProducts"
+            type="search"
+            data-lang="searchPlaceholder"
+            placeholder="Mahsulot qidirish..."
+          />
+          <select id="categoryFilter">
+            <option value="all" data-lang="categoryAll">Barcha toifalar</option>
+            <option value="socks">Socks</option>
+            <option value="men">Men Textile</option>
+            <option value="women">Women Textile</option>
+            <option value="new">New Products</option>
+            <option value="top">Top Products</option>
+          </select>
+        </div>
+        <div class="grid">
+          <article
+            class="glass card product-card"
+            data-title="Elite Cotton Socks"
+            data-category="socks"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+              alt="Socks"
+            />
+            <h3>Elite Cotton Socks</h3>
+            <p data-lang="product1meta">Toifa: Paypoq | Narx: $28</p>
+            <div class="btn-row">
+              <a class="btn" href="#" data-lang="btnView">Ko'rish</a
+              ><a class="btn" href="#" data-lang="btnOrder">Buyurtma</a>
+            </div>
+          </article>
+          <article
+            class="glass card product-card"
+            data-title="Executive Shirt"
+            data-category="men"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+              alt="Men textile"
+            />
+            <h3>Executive Shirt</h3>
+            <p data-lang="product2meta">
+              Toifa: Erkaklar to'qimachiligi | Narx: $74
+            </p>
+            <div class="btn-row">
+              <a class="btn" href="#" data-lang="btnView">Ko'rish</a
+              ><a class="btn" href="#" data-lang="btnOrder">Buyurtma</a>
+            </div>
+          </article>
+          <article
+            class="glass card product-card"
+            data-title="Silk Layer Dress"
+            data-category="women"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+              alt="Women textile"
+            />
+            <h3>Silk Layer Dress</h3>
+            <p data-lang="product3meta">
+              Toifa: Ayollar to'qimachiligi | Narx: $110
+            </p>
+            <div class="btn-row">
+              <a class="btn" href="#" data-lang="btnView">Ko'rish</a
+              ><a class="btn" href="#" data-lang="btnOrder">Buyurtma</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <h2 data-lang="aboutTitle">LIMAX haqida</h2>
+        <p data-lang="aboutText">
+          LIMAX premium standartlar, ishonch va barqarorlik asosida yuqori
+          sifatli to'qimachilik va paypoq mahsulotlarini taqdim etadi.
+        </p>
+      </section>
+      <section class="section container reveal">
+        <h2 data-lang="statsTitle">Statistika</h2>
+        <div class="grid">
+          <div class="glass card">
+            <div class="counter" data-counter="1000">0</div>
+            <p data-lang="statCustomers">Mijozlar</p>
+          </div>
+          <div class="glass card">
+            <div class="counter" data-counter="500">0</div>
+            <p data-lang="statProducts">Mahsulotlar</p>
+          </div>
+          <div class="glass card">
+            <div class="counter" data-counter="5">0</div>
+            <p data-lang="statYears">Yillik tajriba</p>
+          </div>
+          <div class="glass card">
+            <div class="counter" data-counter="95">0</div>
+            <p data-lang="statSatisfaction">Mamnunlik</p>
+          </div>
+        </div>
+      </section>
+      <section class="section container reveal">
+        <h2 data-lang="partnersTitle">Hamkorlar</h2>
+        <div class="grid">
+          <div class="glass card">Partner A</div>
+          <div class="glass card">Partner B</div>
+          <div class="glass card">Partner C</div>
+        </div>
+      </section>
+      <section class="section container reveal">
+        <h2 data-lang="reviewsTitle">Mijozlar fikri</h2>
+        <div class="grid">
+          <article class="glass card">
+            <h3>Aziza N.</h3>
+            <p data-lang="review1">
+              ★★★★★ Premium sifat va o'z vaqtida yetkazib berish.
+            </p>
+          </article>
+          <article class="glass card">
+            <h3>John M.</h3>
+            <p data-lang="review2">★★★★★ Ajoyib xizmat va zamonaviy dizayn.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section container reveal">
+        <h2 data-lang="contactTitle">Aloqa</h2>
+        <p data-lang="contactInfo" data-lang-html="true">
+          Telefon: +998 93 952 00 60<br />Email: nurullohkomilov163@gmail.com<br />Manzil:
+          Toshkent, O'zbekiston<br />Ish vaqti: Dushanba-Shanba, 09:00–19:00
+        </p>
+      </section>
+    </main>
+
+    <footer>
+  <p data-lang="footerSocial">
+    <a href="https://t.me/LIMAX" target="_blank">Telegram</a> |
+    <a href="https://instagram.com/limax" target="_blank">Instagram</a> |
+    <a href="https://facebook.com/limax" target="_blank">Facebook</a>
+  </p>
+      <p>© 2026 LIMAX</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+  </body>
+</html>
