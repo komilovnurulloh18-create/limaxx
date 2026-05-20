@@ -45,24 +45,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const searchInput = document.querySelector("#searchProducts");
-  const categorySelect = document.querySelector("#categoryFilter");
-  const cards = document.querySelectorAll(".product-card");
+const categorySelect = document.querySelector("#categoryFilter");
+const cards = document.querySelectorAll(".product-card");
 
-  const filterCards = () => {
-    const term = searchInput ? searchInput.value.toLowerCase() : "";
-    const category = categorySelect ? categorySelect.value : "all";
+function filterCards() {
+  const searchText = searchInput
+    ? searchInput.value.trim().toLowerCase()
+    : "";
 
-    cards.forEach((card) => {
-      const title = (card.dataset.title || "").toLowerCase();
-      const cardCategory = card.dataset.category;
-      const termMatch = title.includes(term);
-      const categoryMatch = category === "all" || category === cardCategory;
-      card.style.display = termMatch && categoryMatch ? "block" : "none";
-    });
-  };
+  const selectedCategory = categorySelect
+    ? categorySelect.value.toLowerCase()
+    : "all";
 
-  if (searchInput) searchInput.addEventListener("input", filterCards);
-  if (categorySelect) categorySelect.addEventListener("change", filterCards);
+  cards.forEach((card) => {
+    const title = (card.dataset.title || "").toLowerCase();
+    const category = (card.dataset.category || "").toLowerCase();
+
+    const searchMatch =
+      searchText === "" ||
+      title.includes(searchText);
+
+    const categoryMatch =
+      selectedCategory === "all" ||
+      category === selectedCategory;
+
+    if (searchMatch && categoryMatch) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+if (searchInput) {
+  searchInput.addEventListener("input", filterCards);
+}
+
+if (categorySelect) {
+  categorySelect.addEventListener("change", filterCards);
+}
+
+filterCards();  
 
   const menuToggle = document.querySelector("#menuToggle");
   const mainNav = document.querySelector("#mainNav");

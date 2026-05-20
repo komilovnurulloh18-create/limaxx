@@ -40,7 +40,6 @@ const translations = {
     contactTitle: "Aloqa",
     contactInfo:
       "Telefon: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Manzil: Toshkent, O'zbekiston<br>Ish vaqti: Dushanba-Shanba, 09:00–19:00",
-    footerSocial: "Telegram | Instagram | Facebook",
     product1meta: "Toifa: Paypoq | Narx: $28",
     product2meta: "Toifa: Erkaklar to'qimachiligi | Narx: $74",
     product3meta: "Toifa: Ayollar to'qimachiligi | Narx: $110",
@@ -87,7 +86,6 @@ const translations = {
     contactTitle: "Contact",
     contactInfo:
       "Phone: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Location: Tashkent Uzbekistan<br>Hours: Monday-Saturday, 09:00–19:00",
-    footerSocial: "Telegram | Instagram | Facebook",
     product1meta: "Category: Socks | Price: $28",
     product2meta: "Category: Men Textile | Price: $74",
     product3meta: "Category: Women Textile | Price: $110",
@@ -134,7 +132,6 @@ const translations = {
     contactTitle: "Контакты",
     contactInfo:
       "Телефон: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Локация: Ташкент, Узбекистан<br>Часы работы: Понедельник-Суббота, 09:00–19:00",
-    footerSocial: "Telegram | Instagram | Facebook",
     product1meta: "Категория: Носки | Цена: $28",
     product2meta: "Категория: Мужской текстиль | Цена: $74",
     product3meta: "Категория: Женский текстиль | Цена: $110",
