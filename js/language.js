@@ -9,7 +9,7 @@ const translations = {
     navPartners: "Hamkorlar",
     navAbout: "Biz haqimizda",
     navContact: "Aloqa",
-    navLogin: "Kirish",
+    navLogin: "",
     heroSubtitle: "Premium to'qimachilik va paypoq yechimlari",
     heroDescription:
       "Yuqori sifatli to'qimachilik mahsulotlari, ishonch, innovatsiya va premium xizmat.",
@@ -39,7 +39,7 @@ const translations = {
     review2: "★★★★★ Ajoyib xizmat va zamonaviy dizayn.",
     contactTitle: "Aloqa",
     contactInfo:
-      "Telefon: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Manzil: Toshkent, O'zbekiston<br>Ish vaqti: Dushanba-Shanba, 09:00–19:00",
+      "Telefon: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Manzil: Farg'ona, O'zbekiston<br>Ish vaqti: Dushanba-Shanba, 09:00–19:00",
     product1meta: "Toifa: Paypoq | Narx: $28",
     product2meta: "Toifa: Erkaklar to'qimachiligi | Narx: $74",
     product3meta: "Toifa: Ayollar to'qimachiligi | Narx: $110",
