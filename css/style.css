@@ -1072,7 +1072,19 @@ visibility:hidden;
 }
 
 .menu-toggle{
+display:none;
 background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+width:46px;
+height:46px;
+border-radius:12px;
+padding:0;
+cursor:pointer;
+}
+
+@media(max-width:767px){
+
+.menu-toggle{
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -1081,9 +1093,11 @@ gap:5px;
 }
 
 .menu-toggle span{
-display:block !important;
-width:24px !important;
-height:3px !important;
+width:22px;
+height:3px;
 background:#fff !important;
-border-radius:20px;
+border-radius:30px;
+display:block;
+}
+
 }
