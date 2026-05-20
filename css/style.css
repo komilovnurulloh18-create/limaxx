@@ -1070,3 +1070,14 @@ z-index:999999999 !important;
 opacity:0;
 visibility:hidden;
 }
+
+@media(max-width:767px){
+
+.menu-toggle{
+color:#fff !important;
+font-size:32px !important;
+font-weight:700;
+line-height:1;
+}
+
+}
