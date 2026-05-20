@@ -842,7 +842,6 @@ width:100%;
 .modal-thumbs button{
 width:75px !important;
 height:75px !important;
-min-width:75px !important;
 }
 
 .modal-thumbs img{
@@ -853,11 +852,6 @@ object-fit:cover;
 
 @media(max-width:767px){
 
-*{
-animation:none !important;
-transition:none !important;
-}
-
 body{
 background:#0f172a;
 }
@@ -866,4 +860,89 @@ background:#0f172a;
 display:none;
 }
 
+.card,
+.product-card,
+.hero-card{
+transition:.25s ease !important;
 }
+
+.loader-ring{
+animation:spin .8s linear infinite !important;
+}
+
+.nav-links{
+background:#08111f !important;
+backdrop-filter:blur(12px);
+}
+
+.menu-close{
+display:flex !important;
+position:absolute;
+top:15px;
+right:15px;
+z-index:999999;
+}
+
+}
+
+/* TELEFON FINAL FIX */
+
+@media(max-width:767px){
+
+/* menyu ochilganda ichidagi narsalar ko'rinsin */
+.nav-links{
+display:flex !important;
+justify-content:flex-start !important;
+padding-top:70px !important;
+overflow-y:auto;
+}
+
+/* X tugma tepada aniq turadi */
+.menu-close{
+display:flex !important;
+position:fixed !important;
+top:15px !important;
+right:15px !important;
+width:45px;
+height:45px;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:#111827 !important;
+z-index:1000000 !important;
+}
+
+/* menu linklar ko'rinsin */
+.mobile-nav-items{
+display:flex !important;
+flex-direction:column;
+gap:12px;
+opacity:1 !important;
+}
+
+.mobile-nav-items a{
+opacity:1 !important;
+transform:none !important;
+visibility:visible !important;
+}
+
+/* loader telefon uchun */
+.loader-ring{
+width:48px !important;
+height:48px !important;
+border-width:3px !important;
+animation:spin .7s linear infinite !important;
+}
+
+/* oq ekran chiqishini kamaytiradi */
+body{
+-webkit-overflow-scrolling:touch;
+}
+
+/* safari lag fix */
+*{
+-webkit-tap-highlight-color:transparent;
+}
+
+}
+
