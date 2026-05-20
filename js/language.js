@@ -39,7 +39,7 @@ const translations = {
     review2: "★★★★★ Ajoyib xizmat va zamonaviy dizayn.",
     contactTitle: "Aloqa",
     contactInfo:
-      "Telefon: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Manzil: Farg'ona, O'zbekiston<br>Ish vaqti: Dushanba-Shanba, 09:00–19:00",
+      "Telefon: +998 93 952 00 60<br>Email: nurullohkomilov163@gmail.com<br>Manzil: Farg'ona, O'zbekiston<br>Ish vaqti: Dushanba-Shanba, 09:00–19:00",
     product1meta: "Toifa: Paypoq | Narx: $28",
     product2meta: "Toifa: Erkaklar to'qimachiligi | Narx: $74",
     product3meta: "Toifa: Ayollar to'qimachiligi | Narx: $110",
@@ -85,7 +85,7 @@ const translations = {
     review2: "★★★★★ Excellent service and design language.",
     contactTitle: "Contact",
     contactInfo:
-      "Phone: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Location: Tashkent Uzbekistan<br>Hours: Monday-Saturday, 09:00–19:00",
+      "Phone: +998 93 952 00 60<br>Email: nurullohkomilov163@gmail.com<br>Location: Tashkent Uzbekistan<br>Hours: Monday-Saturday, 09:00–19:00",
     product1meta: "Category: Socks | Price: $28",
     product2meta: "Category: Men Textile | Price: $74",
     product3meta: "Category: Women Textile | Price: $110",
@@ -131,7 +131,7 @@ const translations = {
     review2: "★★★★★ Отличный сервис и современный дизайн.",
     contactTitle: "Контакты",
     contactInfo:
-      "Телефон: +998 90 855 74 75<br>Email: nurullohkomilov163@gmail.com<br>Локация: Ташкент, Узбекистан<br>Часы работы: Понедельник-Суббота, 09:00–19:00",
+      "Телефон: +998 93 952 00 60<br>Email: nurullohkomilov163@gmail.com<br>Локация: Ташкент, Узбекистан<br>Часы работы: Понедельник-Суббота, 09:00–19:00",
     product1meta: "Категория: Носки | Цена: $28",
     product2meta: "Категория: Мужской текстиль | Цена: $74",
     product3meta: "Категория: Женский текстиль | Цена: $110",
