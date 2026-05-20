@@ -1112,3 +1112,29 @@ flex:none !important;
 }
 
 }
+
+/* TIL IKKITA CHIQISH FIX */
+
+.desktop-only{
+display:block !important;
+}
+
+.mobile-lang-wrap{
+display:none !important;
+}
+
+@media(max-width:767px){
+
+.desktop-only{
+display:none !important;
+}
+
+.mobile-lang-wrap{
+display:block !important;
+}
+
+.mobile-lang-wrap .language-selector:nth-child(2){
+display:none !important;
+}
+
+}
