@@ -640,8 +640,8 @@ transform:none !important;
 }
 
 .reveal{
-opacity:1 !important;
-transform:none !important;
+opacity:1;
+transform:none;
 }
 
 .product-card img{
@@ -1186,38 +1186,4 @@ right:auto !important;
 margin:0 !important;
 }
 
-}
-
-/* SCROLL ANIMATION */
-
-.reveal{
-opacity:0;
-transform:translateY(70px);
-transition:
-opacity .8s ease,
-transform .8s ease;
-}
-
-.reveal.visible{
-opacity:1;
-transform:translateY(0);
-}
-
-/* chap/o'ngdan chiqadiganlar */
-.slide-left{
-opacity:0;
-transform:translateX(-80px);
-transition:.8s;
-}
-
-.slide-right{
-opacity:0;
-transform:translateX(80px);
-transition:.8s;
-}
-
-.slide-left.visible,
-.slide-right.visible{
-opacity:1;
-transform:none;
 }
