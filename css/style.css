@@ -1082,13 +1082,45 @@ word-break:break-word;
 
 /* ===== FINAL LANGUAGE FIX ===== */
 
-/* desktopda faqat yuqoridagi chiqsin */
+/* ===== DESKTOP + MOBILE LANGUAGE CLEAN FIX ===== */
+
+/* desktop */
 .desktop-only{
-display:block !important;
+display:inline-block !important;
 }
 
 .mobile-lang-wrap{
 display:none !important;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+justify-content:flex-end;
+gap:12px;
+}
+
+/* mobil */
+@media(max-width:767px){
+
+.desktop-only,
+.language-selector.desktop-only,
+.lang-label.desktop-only{
+display:none !important;
+}
+
+.mobile-lang-wrap{
+display:flex !important;
+flex-direction:column;
+width:100%;
+margin-top:20px;
+}
+
+.mobile-lang-wrap .language-selector{
+display:block !important;
+width:130px !important;
+}
+
 }
 
 /* navbar ichidagi desktop select */

@@ -9,7 +9,6 @@ const translations = {
     navPartners: "Hamkorlar",
     navAbout: "Biz haqimizda",
     navContact: "Aloqa",
-    navLogin: "",
     heroSubtitle: "Premium to'qimachilik va paypoq yechimlari",
     heroDescription:
       "Yuqori sifatli to'qimachilik mahsulotlari, ishonch, innovatsiya va premium xizmat.",
@@ -55,7 +54,6 @@ const translations = {
     navPartners: "Partners",
     navAbout: "About Us",
     navContact: "Contact",
-    navLogin: "Login",
     heroSubtitle: "Premium Textile & Socks Solutions",
     heroDescription:
       "High-quality textile products with trust, innovation and premium service.",
@@ -101,7 +99,6 @@ const translations = {
     navPartners: "Партнеры",
     navAbout: "О нас",
     navContact: "Контакты",
-    navLogin: "Вход",
     heroSubtitle: "Премиальные решения в текстиле и носках",
     heroDescription:
       "Высококачественная текстильная продукция с доверием, инновациями и премиальным сервисом.",
