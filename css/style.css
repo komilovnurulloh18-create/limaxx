@@ -981,3 +981,60 @@ display:none;
 
 }
 
+
+/* ===== MENU + LOADER FIX ===== */
+
+@media(max-width:767px){
+
+/* menyudagi narsalar ko'rinsin */
+.mobile-nav-items{
+display:flex !important;
+flex-direction:column !important;
+gap:12px;
+opacity:1 !important;
+visibility:visible !important;
+}
+
+.mobile-nav-items a{
+opacity:1 !important;
+visibility:visible !important;
+transform:none !important;
+display:block !important;
+width:100%;
+}
+
+/* X tugma */
+.menu-close{
+display:flex !important;
+position:fixed !important;
+top:15px !important;
+right:15px !important;
+z-index:9999999 !important;
+align-items:center;
+justify-content:center;
+}
+
+/* menu ichidagi scroll */
+.nav-links{
+padding-top:80px !important;
+overflow-y:auto !important;
+}
+
+/* til qismi */
+.mobile-lang-wrap{
+display:block !important;
+}
+
+/* loader */
+.loader{
+display:grid !important;
+}
+
+.loader-ring{
+display:block !important;
+width:48px;
+height:48px;
+animation:spin .8s linear infinite !important;
+}
+
+}

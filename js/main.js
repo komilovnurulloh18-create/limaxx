@@ -9,10 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
   updateNavbarState();
   window.addEventListener("scroll", updateNavbarState, { passive: true });
 
+  window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
-  if (loader) {
-    setTimeout(() => loader.classList.add("hidden"), 700);
+
+  if(loader){
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    },800);
   }
+});
 
   const reveals = document.querySelectorAll(".reveal");
 
@@ -90,50 +95,64 @@ if (categorySelect) {
 
 filterCards();  
 
-  const menuToggle = document.querySelector("#menuToggle");
-  const mainNav = document.querySelector("#mainNav");
-  const menuClose = document.querySelector("#menuClose");
+ const menuToggle=document.querySelector("#menuToggle");
+const mainNav=document.querySelector("#mainNav");
+const menuClose=document.querySelector("#menuClose");
 
-  const closeMenu = () => {
-    if (!mainNav || !menuToggle) return;
-    mainNav.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("menu-open");
-  };
+function openMenu(){
+ if(!mainNav)return;
 
-  const openMenu = () => {
-    if (!mainNav || !menuToggle) return;
-    mainNav.classList.add("open");
-    menuToggle.setAttribute("aria-expanded", "true");
-    document.body.classList.add("menu-open");
-  };
+ mainNav.classList.add("open");
+ document.body.classList.add("menu-open");
+}
 
-  if (menuToggle && mainNav) {
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.addEventListener("click", () => {
-      if (mainNav.classList.contains("open")) closeMenu();
-      else openMenu();
-    });
-    if (menuClose) {
-      menuClose.addEventListener("click", closeMenu);
-    }
+function closeMenu(){
+ if(!mainNav)return;
 
-    mainNav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => closeMenu());
-    });
+ mainNav.classList.remove("open");
+ document.body.classList.remove("menu-open");
+}
 
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && mainNav.classList.contains("open")) {
-        closeMenu();
-      }
-    });
+if(menuToggle){
 
-    window.addEventListener("resize", () => {
-      if (window.innerWidth >= 768) {
-        closeMenu();
-      }
-    });
-  }
+menuToggle.addEventListener("click",()=>{
+
+if(mainNav.classList.contains("open")){
+closeMenu();
+}else{
+openMenu();
+}
+
+});
+
+}
+
+if(menuClose){
+
+menuClose.addEventListener("click",closeMenu);
+
+}
+
+document.querySelectorAll("#mainNav a")
+.forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+closeMenu();
+
+})
+
+});
+
+window.addEventListener("resize",()=>{
+
+if(window.innerWidth>768){
+
+closeMenu();
+
+}
+
+});
 
   const sortProducts = document.querySelector("#sortProducts");
   const productsGrid = document.querySelector("#productsGrid");
