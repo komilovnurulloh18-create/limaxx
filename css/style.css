@@ -382,17 +382,6 @@ footer a:hover{
   text-shadow: 0 0 10px var(--accent);
 }
 
-.reveal{
- opacity:1;
- transform:none;
- transition:.4s;
- will-change:transform;
-}
-
-.reveal.visible{
- opacity:1;
- transform:none;
-}
 
 .auth-wrap,
 .page-hero {
